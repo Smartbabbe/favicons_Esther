@@ -7,14 +7,38 @@
 
 body {
     line-height: -1;
+    font-family: 'Manrope', sans-serif;
 }
 
 .navdiv {
-    height: 30vh;
+    height: 33vh;
     background-image: url(Rectangle\ 190.png);
     background-position: bottom;
     background-size: cover;
     background-repeat: no-repeat;
+}
+
+.logo-design {
+    width: 60px;
+    border-radius: 100%;
+    position: absolute;
+    background-color: white;
+    left: 4rem;
+    top: 1rem;
+}
+
+.navbar {
+    background-color:#2D1D90;  
+}   
+
+.nav-link { 
+    color: white !important;
+    font-size: larger !important;
+    padding-left: 20px !important;
+}
+
+.nav-link:hover {
+  color: black !important;
 }
 
 
@@ -178,16 +202,18 @@ body {
     padding: 4px 6px;
     border-radius: 7px;
     border: none;
-    background-color: #4A90E2;
+    background-color: #2D1D90;
+    text-decoration: none;
 }
 
 .button1 a {
-    color: black;
+    color: white;
     font-size: 18px;
+    text-decoration: none;
 }
 
 .button1 :hover {
-    color: white;
+    color: black;
 }
 
 @media screen and (max-width: 1519px) {
@@ -195,10 +221,6 @@ body {
 
     .file img {
         margin-left: 13em;
-    }
-
-    .file button {
-        margin-left: 10em;
     }
 
     .div3 {
@@ -562,8 +584,23 @@ body {
             border-radius: 10px;
             border: 3px dotted black;
             font-size: 19px;
-            margin: -150px 230px 20px 230px;
+            margin: -130px 230px 20px 230px;
         }
+
+        .logo-design {
+            width: 60px;
+            border-radius: 100%;
+            position: absolute;
+            background-color: white;
+            left: -46rem;
+            top: 1rem;
+        }
+
+        .navItem {
+            width: 20%;
+            position: absolute;
+            margin-left: 105vh;   
+          }
         
     }
 
@@ -575,22 +612,111 @@ body {
         .file button {
             margin-left: 7em;
         }
+
+        .logo-design {
+            width: 60px;
+            border-radius: 100%;
+            position: absolute;
+            background-color: white;
+            top: 1rem;
+        }
+
+        .navItem {
+            width: 20%;
+            position: absolute;
+            margin-left: 105vh;   
+          }
+        
+          .navbar-toggler-icon {
+           text-align: end!important;
+          }
+
+          
+          .navbar {
+            background-color:#2D1D90;
+            z-index: 1;
+            
+          }
+          
+        .nav-link {
+           
+            color: white !important;
+            padding-left: 20px !important;
+          }
     }
 
-    @media screen and (max-width: 850px) {
+    @media screen and (max-width:930px) {
+        .logo-design {
+            width: 60px;
+            border-radius: 100%;
+            position: absolute;
+            background-color: white;
+            left: -40rem;
+            top: 1rem;
+        }
+
+        .navItem {
+            width: 20%;
+            position: absolute;
+            margin-left: 101vh;   
+          }
+    }
+
+    @media screen and (max-width:900px) {
+        .logo-design {
+            width: 60px;
+            border-radius: 100%;
+            position: absolute;
+            background-color: white;
+            left: -40rem;
+            top: 1rem;
+        }
+
+        .navItem {
+            width: 20%;
+            position: absolute;
+            margin-left: 98vh;   
+          }
+    }
+
+    @media screen and (max-width:890px) {
+        .logo-design {
+            width: 60px;
+            border-radius: 100%;
+            position: absolute;
+            background-color: white;
+            left: -40rem;
+            top: 1rem;
+        }
+
+        .navItem {
+            width: 20%;
+            position: absolute;
+            margin-left: 96vh;   
+          }
+    }
+
+    
+
+
+    @media screen and (max-width: 860px) {
         .file img{
-            margin-left: 11em;
+            margin-left: 12em;
+        }
+
+        .file span {
+            margin-left: 20px;
         }
 
         .file button {
-            margin-left: 8em;
+            margin-left: 7.5em;
         }
 
         .file {
             border-radius: 10px;
             border: 3px dotted black;
             font-size: 19px;
-            margin: -150px 180px 20px 180px;
+            margin: -110px 180px 20px 180px;
         }
 
         .div3 {
@@ -612,17 +738,50 @@ body {
         .labelproject {
             margin-right: 7px;
         }
+
+        .logo-design {
+            width: 60px;
+            border-radius: 100%;
+            position: absolute;
+            background-color: white;
+            left: -40rem;
+            top: 1rem;
+        }
+
+        .navItem {
+            width: 20%;
+            position: absolute;
+            margin-left: 95vh;   
+          }
     }
 
-    @media screen and (max-width: 800px) {
+      
+    
+        
+    @media screen and (max-width: 850px) {
         header {
-            height: 30vh;
+            height: 33vh;
             background-image: url(bg_header.png);
         }
+
+        .logo-design {
+            width: 60px;
+            border-radius: 100%;
+            position: absolute;
+            background-color: white;
+            left: -36rem;
+            top: 1rem;
+        }
+
+        .navItem {
+            width: 20%;
+            position: absolute;
+            margin-left: 42rem;   
+          }
             
         .div2 {
             position: relative;
-            top: -150px;
+            top: -145px;
             width: 100%;
         }
         
@@ -677,9 +836,9 @@ body {
         
         .file {
             border-radius: 15px;
-            border: 4px dashed rgb(83, 6, 6);
+            border: 4px dashed rgb(59, 35, 35);
             font-size: 20px;
-            margin: -100px 100px 10px 100px;
+            margin: -70px 100px 10px 100px;
             padding: 20px 0 20px 0;
             color: white;
             background-color: rgba(101, 123, 156, 0.932);
@@ -688,11 +847,11 @@ body {
         
         .file img {
             height: 40px;
-            margin-left: 12em;
+            margin-left: 14em;
         }
         
         .file button {
-            margin-left: 8.5em;
+            margin-left: 10.5em;
             border: none;
             font-size: 20px;
             background: transparent;
@@ -700,7 +859,7 @@ body {
         }
         
         .file span {
-            margin-left: 2px;
+            margin-left: -1em;
         }
         
         .file :active {
@@ -728,7 +887,7 @@ body {
         
         .place {
             border-radius: 10px ;
-            border: 4px dashed rgb(83, 6, 6);
+            border: 4px dashed rgb(59, 35, 35);
             width: 72%;
             margin: auto;
             outline: none;
@@ -759,5 +918,76 @@ body {
             font-size: 25px;
             color: white;
             background-color: rgb(51, 51, 156);
-        }        
-    }
+        }
+        
+          .navbar-toggler-icon {
+           text-align: end !important;
+          }
+        
+          .navbar {
+              background-color:#2D1D90;
+              z-index: 1;
+              
+            }
+            
+          .nav-liink {
+              color: white !important;
+              padding-left: 20px !important;
+            }
+        } 
+
+        @media screen and (max-width: 830px) {
+            header {
+                height: 33vh;
+                background-image: url(bg_header.png);
+            }
+    
+            .logo-design {
+                width: 60px;
+                border-radius: 100%;
+                position: absolute;
+                background-color: white;
+                left: -36rem;
+                top: 1rem;
+            }
+    
+            .navItem {
+                width: 20%;
+                position: absolute;
+                margin-left: 40rem;   
+            }
+        }
+
+        @media screen and (max-width:800px) {
+            .logo-design {
+                width: 60px;
+                border-radius: 100%;
+                position: absolute;
+                background-color: white;
+                left: -36rem;
+                top: 1rem;
+            }
+    
+            .navItem {
+                width: 20%;
+                position: absolute;
+                margin-left: 40rem;   
+            }
+
+            .file img {
+                height: 40px;
+                margin-left: 14em;
+            }
+
+            .file span {
+                margin-left: 20px;
+            }
+            
+            .file button {
+                margin-left: 10em;
+                border: none;
+                font-size: 20px;
+                background: transparent;
+                color: white;
+            }
+        }
