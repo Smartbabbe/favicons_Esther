@@ -5,9 +5,39 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="aftergen.css">
+    <link rel="stylesheet" href="{% static 'favigen/css/aftergen.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Manrope&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous"><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 </head>
 <body>
+  <div class="navItem">
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <button class="navbar-toggler"  type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Saved Icons</a>
+            </li>
+            <li class="nav-item">
+              <a id="nav-gen" class="nav-link active" href="index.html">Generate</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Sign out</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <img class="logo-design" src="{% static 'favigen/img/logo.png' %}" alt="">
     <div class="navdiv">
     </div>
       <div class="div2">
@@ -15,7 +45,7 @@
           <button class="generate">
             <a class="button_generate" href="index.html">Generate</a>
           </button>
-          <button class="button_saved">Saved icons</button><br />
+          <button class="button_saved"><a href="saved-icons.html">Saved icons</a></button><br />
         </div>
         <br /><br />
 
@@ -27,7 +57,7 @@
 
     <section>
       <div class="file">
-        <img src="Rectangle 176.png" alt="">
+        <img src="{% static 'favigen/img/Rectangle 176.png' %}" alt="">
       </div>
 
       <div class="div3">
