@@ -7,6 +7,7 @@
 
 body {
     line-height: -1;
+    font-family: 'Manrope', sans-serif;
 }
 
 .navdiv {
@@ -17,7 +18,28 @@ body {
     background-repeat: no-repeat;
 }
 
+.logo-design {
+    width: 60px;
+    border-radius: 100%;
+    position: absolute;
+    background-color: white;
+    left: 4rem;
+    top: 1rem;
+}
 
+.navbar {
+    background-color:#2D1D90;
+}   
+
+.nav-link { 
+    color: white !important;
+    font-size: larger !important;
+    padding-left: 20px !important;
+}
+
+.nav-link:hover {
+  color: black !important;
+}
 
 .div2 {
     position: relative;
@@ -84,24 +106,29 @@ body {
 
 .file {
     border-radius: 10px;
-    margin: -130px 450px 20px 450px;
+    margin: -150px 450px 20px 450px;
     background-color: transparent;
 }
 
 .file img {
-    height: 27vh;
+    height: 24.5vh;
     margin-bottom: -10px;
     /* margin-left: 15em; */
 }
 
 .div3 {
-    width: 42.5%;
+    width: 80%;
     margin: auto;
-
 }
 
 .text1 {
     font-size: 22px;
+}
+
+.div3b {
+    width: 100%;
+    margin: auto;
+
 }
 
 .place {
@@ -129,7 +156,7 @@ body {
 }
 
 .div5 {
-    width: 44%;
+    width: 52%;
     margin: auto;
     display: flex;
     align-items: right;
@@ -141,18 +168,19 @@ body {
     padding: 4px 6px;
     border-radius: 7px;
     border: none;
-    background-color: #4A90E2;
+    background-color: #2D1D90;
     color: black;
     font-size: 20px;
 }
 
 .button1 a {
-    color: black;
+    text-decoration: none;
+    color: white;
     font-size: 22px;
 }
 
 .button1 :hover {
-    color: white;
+    color: black;
 }
 
 @media screen and (max-width: 1519px) {
@@ -161,24 +189,21 @@ body {
     .file img {
         height: 24vh;
         margin-bottom: -10px;
-    }
-
-    .file button {
-        margin-left: 10em;
+        margin-left: -1.5rem;
     }
 
     .div3 {
-        width: 39%;
+        width: 43%;
         margin: auto;
     }
 
     .div4 {
-        width: 40%;
+        width: 44%;
         margin: auto;
     }
     
     .div5 {
-        width: 40%;
+        width: 43%;
         margin: auto;
         
     }
@@ -217,39 +242,24 @@ body {
     
 }
 
-@media screen and (max-width: 1477px) {
-
-
+@media screen and (max-width:1450px) {
     .file img {
-        height: 22;
+        height: 22.5vh;
+        margin-left: -2em;
     }
 
     .div3 {
-        width: 39%;
+        width: 42%;
         margin: auto;
     }
 
     .div4 {
-        width: 40%;
+        width: 42%;
         margin: auto;
     }
     
     .div5 {
-        width: 40%;
-        margin: auto;
-        
-    }
-    
-}
-
-@media screen and (max-width:1450px) {
-    .file img {
-        height: 22vh;
-        margin-left: -0.8em;
-    }
-
-    .div3 {
-        width: 38.5%;
+        width: 42%;
         margin: auto;
     }
 }
@@ -259,21 +269,21 @@ body {
 
     .file img {
         height: 22vh;
-        margin-left: -1.2em;
+        margin-left: -2.3em;
     }
 
     .div3 {
-        width: 39%;
+        width: 42.5%;
         margin: auto;
     }
 
     .div4 {
-        width: 39.5%;
+        width: 42.5%;
         margin: auto;
     }
     
     .div5 {
-        width: 39.5%;
+        width: 42.5%;
         margin: auto;
         
     }
@@ -283,22 +293,22 @@ body {
 
 
     .file img {
-        height: 21vh;
-        margin-left: -2em;
+        height: 22vh;
+        margin-left: -3.5em;
     }
 
     .div3 {
-        width: 38.4%;
+        width: 43%;
         margin: auto;
     }
 
     .div4 {
-        width: 39.5%;
+        width: 43%;
         margin: auto;
     }
     
     .div5 {
-        width: 39.5%;
+        width: 43%;
         margin: auto;
         
     }
@@ -309,11 +319,11 @@ body {
 
     .file img {
         height: 23vh;
-        margin-left: 0.3em;
+        margin-left: -1.7em;
     }
 
     .div3 {
-        width: 41%;
+        width: 47%;
         margin: auto;
     }
 
@@ -322,12 +332,12 @@ body {
     }
 
     .div4 {
-        width: 42%;
+        width: 47%;
         margin: auto;
     }
     
     .div5 {
-        width: 46%;
+        width: 47%;
         margin: auto;
         
     }
@@ -344,34 +354,29 @@ body {
 
 
     .file img {
-        height: 26vh;
-        margin-left: -0.8em;
+        height: 24vh;
+        margin-left: -1.6em;
     }
 
     .div3 {
-        width: 48%;
+        width: 52%;
         margin: auto;
     }
 
     .div4 {
-        width: 49%;
+        width: 52%;
         margin: auto;
     }
     
     .div5 {
-        width: 53%;
+        width: 52%;
         margin: auto;
         
     }
 
-    .file button {
-        margin-left: 10em;
-        font-size: 20px;
-    }
-
     .file {
         font-size: 19px;
-        margin: -150px 350px 20px 350px;
+        margin: -160px 350px 20px 350px;
         padding: 25px 0 20px 0;
         background-color: transparent;
 
@@ -383,33 +388,28 @@ body {
 
 
     .file img {
-    height: 26vh;
+    height: 23vh;
     }
 
     .div3 {
-        width: 49%;
+        width: 51%;
         margin: auto;
     }
 
     .div4 {
-        width: 49%;
+        width: 51%;
         margin: auto;
     }
     
     .div5 {
-        width: 49%;
+        width: 51%;
         margin: auto;
         
     }
 
-    .file button {
-        margin-left: 9em;
-        font-size: 20px;
-    }
-
     .file {
         font-size: 19px;
-        margin: -150px 310px 20px 330px;
+        margin: -170px 310px 20px 330px;
         padding: 25px 0 20px 0;
         color: white;
         background-color: transparent;
@@ -419,29 +419,24 @@ body {
 
 @media screen and (max-width:1200px) {
     .file img {
-        height: 25vh;
-        margin-left: -em;
+        height: 23vh;
+        margin-left: -1em;
     }
 
     .div3 {
-        width: 51%;
+        width: 53%;
         margin: auto;
     }
 
     .div4 {
-        width: 50%;
+        width: 53%;
         margin: auto;
     }
     
     .div5 {
-        width: 50%;
+        width: 53%;
         margin: auto;
         
-    }
-
-    .file button {
-        margin-left: 9em;
-        font-size: 20px;
     }
 
     .file {
@@ -452,27 +447,23 @@ body {
 }
 
 @media screen and (max-width: 1125px) {
-    .file button {
-        margin-left: 10em;
-    }
-
     .file img {
-        height: 25vh;
-        margin-left: -0.02em;
+        height: 23vh;
+        margin-left: -0.8em;
     }
 
     .div3 {
-        width: 53%;
+        width: 56.5%;
         margin: auto;
     }
 
     .div4 {
-        width: 54%;
+        width: 57%;
         margin: auto;
     }
     
     .div5 {
-        width: 59%;
+        width: 57%;
         margin: auto;
         
     }
@@ -486,79 +477,150 @@ body {
 
     @media screen and (max-width:1030px) {
         .file img {
-            height: 22vh;
-        }
-
-        .file button {
-            margin-left: 8em;
+            height: 20.5vh;
+            margin-left: -1.3em;
         }
 
         .div3 {
-            width: 51%;
+            width: 56%;
             margin: auto;
         }
     
         .div4 {
-            width: 51%;
+            width: 56%;
             margin: auto;
         }
         
         .div5 {
-            width: 51%;
+            width: 56%;
             margin: auto;
             
         }
     }
 
     @media screen and (max-width:990px) {
+        .navdiv {
+            height: 33vh;
+            background-image: url(Rectangle\ 190.png);
+            background-position: bottom;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .div2 {
+            position: relative;
+            top: -150px;
+            width: 100%;
+        }
+
         .file img {
             height: 21vh;
+            margin-left: -1.2rem;
         }
     
         .div3 {
-            width: 52%;
+            width: 59%;
             margin: auto;
         }
     
         .div4 {
-            width: 52%;
+            width: 59%;
             margin: auto;
         }
         
         .div5 {
-            width: 52%;
+            width: 59%;
             margin: auto;
         }
     
         .file {
             margin: -150px 230px 20px 230px;
         }
+
+        .logo-design {
+            width: 60px;
+            border-radius: 100%;
+            position: absolute;
+            background-color: white;
+            left: -46rem;
+            top: 1rem;
+        }
+
+        .navItem {
+            width: 20%;
+            position: absolute;
+            margin-left: 110vh;   
+          }
         
     }
 
     @media screen and (max-width: 950px) {
         .file img{
-            height: 20.8vh;
+            height: 20vh;
+            margin-left: -2rem;
         }
 
-        .file button {
-            margin-left: 7em;
+        .logo-design {
+            width: 60px;
+            border-radius: 100%;
+            position: absolute;
+            background-color: white;
+            /* left: 4rem; */
+            top: 1rem;
+        }
+
+        .navItem {
+            width: 20%;
+            position: absolute;
+            margin-left: 105vh;   
+          }
+        
+          .navbar-toggler-icon {
+           text-align: end!important;
+          }
+
+          
+          .navbar {
+            background-color:#2D1D90;
+            z-index: 1;
+            
+          }
+          
+        .nav-link {
+           
+            color: white !important;
+            padding-left: 20px !important;
+          }
+
+          .div3 {
+            width: 59%;
+            margin: auto;
+        }
+    
+        .div4 {
+            width: 59%;
+            margin: auto;
+        }
+        
+        .div5 {
+            width: 59%;
+            margin: auto;
         }
     }
 
     @media screen and (max-width: 890px) {
         .file img{
-            height: 19.7vh;
-            margin-left: -0.9em;
+            height: 19vh;
+            margin-left: -2.3em;
         }
 
         .div3 {
-            width: 52%;
+            width: 58%;
             margin: auto;
         }
     
         .div4 {
-            width: 54%;
+            width: 58%;
             margin: auto;
         }
         
@@ -567,11 +629,26 @@ body {
             margin: auto;
         }
 
+        .logo-design {
+            width: 60px;
+            border-radius: 100%;
+            position: absolute;
+            background-color: white;
+            left: -44rem;
+            top: 1rem;
+        }
+
+        .navItem {
+            width: 20%;
+            position: absolute;
+            margin-left: 100vh;   
+          }
+
     }
 
-    @media screen and (max-width: 850px) {
+    @media screen and (max-width: 860px) {
         .file img{
-            height: 20.7vh;
+            height: 18vh;
             margin-left: -0.1em;
         }
 
@@ -599,9 +676,24 @@ body {
         .labelproject {
             margin-right: 7px;
         }
+
+        .navItem {
+            width: 20%;
+            position: absolute;
+            margin-left: 95vh;   
+        }
+
+          .logo-design {
+            width: 60px;
+            border-radius: 100%;
+            position: absolute;
+            background-color: white;
+            left: -41rem;
+            top: 1rem;
+        }
     }
 
-    @media screen and (max-width: 800px) {
+    @media screen and (max-width: 850px) {
         header {
             height: 30vh;
             background-image: url(bg_header.png);
@@ -672,6 +764,7 @@ body {
         
         .file img {
             height: 21vh;
+            margin-left: 2rem;
         }
         
         .div3 {
@@ -714,6 +807,85 @@ body {
             border: none;
             font-size: 25px;
             color: white;
-            background-color: #4A90E2;
-        }        
+        }   
+        
+        .navItem {
+            width: 20%;
+            position: absolute;
+            margin-left: 90vh;   
+        }
+
+          .logo-design {
+            width: 60px;
+            border-radius: 100%;
+            position: absolute;
+            background-color: white;
+            left: -40rem;
+            top: 1rem;
+        }
+        
+          .navbar-toggler-icon {
+           text-align: end !important;
+          }
+        
+          .navbar {
+              background-color:#2D1D90;
+              z-index: 1;
+              
+            }
+            
+          .nav-link {
+             
+              color: white !important;
+              padding-left: 20px !important;
+            }
+    }
+
+    @media screen and (max-width: 830px) {
+        header {
+            height: 33vh;
+            background-image: url(bg_header.png);
+        }
+
+        .logo-design {
+            width: 60px;
+            border-radius: 100%;
+            position: absolute;
+            background-color: white;
+            left: -36rem;
+            top: 1rem;
+        }
+
+        .navItem {
+            width: 20%;
+            position: absolute;
+            margin-left: 40rem;   
+        }
+
+        .file img {
+            height: 20vh;
+            margin-left: 1.3em;
+        }
+    }
+
+    @media screen and (max-width:800px) {
+        .logo-design {
+            width: 60px;
+            border-radius: 100%;
+            position: absolute;
+            background-color: white;
+            left: -36rem;
+            top: 1rem;
+        }
+
+        .navItem {
+            width: 20%;
+            position: absolute;
+            margin-left: 38rem;   
+        }
+
+        .file img {
+            height: 20vh;
+            margin-left: 1rem;
+        }
     }
