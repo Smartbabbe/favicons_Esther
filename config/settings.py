@@ -29,7 +29,8 @@ SECRET_KEY = os.getenv(key='SECRET_KEY', default="django-insecure-_#rb-u4cjj-0kt
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['favicon-gen-proj.herokuapp.com', '127.0.0.1', 'localhost']
+# ALLOWED_HOSTS = ['favicon-gen-proj.herokuapp.com', '127.0.0.1', 'localhost', 'http://favigen.zurifordummies.com/']
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -102,13 +103,17 @@ WSGI_APPLICATION = 'config.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': os.getenv('DB_NAME'),
-        'USER': os.getenv('USER'),
-        'PASSWORD': "Toluwan1",
-        'HOST': os.getenv('HOST'),
-        'PORT': os.getenv('PORT'),
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
+    # 'default': {
+    #     'ENGINE': 'django.db.backends.postgresql_psycopg2',
+    #     'NAME': os.getenv('DB_NAME'),
+    #     'USER': os.getenv('USER'),
+    #     'PASSWORD': "Toluwan1",
+    #     'HOST': os.getenv('HOST'),
+    #     'PORT': os.getenv('PORT'),
+    # }
     # 'default': {
     #     'ENGINE': 'django.db.backends.postgresql_psycopg2',
     #     'NAME': 'df0rgj8b0d5aji',
@@ -158,7 +163,7 @@ STATIC_URL = 'static/'
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'favigen/static')]
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
-MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+MEDIA_ROOT = os.path.join(BASE_DIR, 'static/media')
 MEDIA_URL = '/media/'
 
 # Default primary key field type

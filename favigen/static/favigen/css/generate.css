@@ -6,6 +6,8 @@
 }
 
 body {
+    font-family: "Manrope", sans-serif;
+    background-color: white;
     line-height: -1;
     font-family: 'Manrope', sans-serif;
 }
@@ -55,12 +57,12 @@ body {
     position: relative;
 }
 
-.button_generate {
-    background-color: #4A90E2;
+/*.button_generate {
+    background-color: transparent;
     padding: 9px 70px 8px 30px;
     border-radius: 0 50px 50px 0;
-    border: none;
-    color: white;
+    border: 2px solid grey;
+    color: black;
     position: absolute;
     left: 10px;
     top: 0px;
@@ -81,6 +83,50 @@ body {
     background-color: transparent;
     margin-left: 140px;
 }
+
+.btn_generate{
+  margin-right: 12%;
+  padding: 12px 40px;
+  border: 2px solid rgb(177,171,214);
+  font-size: 16px;
+  color: rgb(177,171,214);
+  font-weight: 400;
+  border-width: 1px;
+  background-color: transparent;
+}
+
+.btn_generate a{
+  text-decoration: none;
+  color: black;
+}
+
+.btn_generate a:hover{
+  color: rgb(177,171,214);
+  cursor: pointer;
+}
+
+.btn_saved{
+  background-color: white;
+  border-radius:  50px 0 0 50px;
+  padding: 14px 50px;
+  color: black;
+  font-size: 16px;
+  font-weight: 400;
+  position: absolute;
+  left: 120px;
+  border: none;
+}
+
+.btn_saved a{
+  text-decoration: none;
+  color: black;
+}
+
+.btn_saved a:hover{
+  color: rgb(177,171,214);
+  cursor: pointer;
+}
+/* */
 
 .div2b {
     width: 75%;

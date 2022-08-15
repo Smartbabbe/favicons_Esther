@@ -10,74 +10,41 @@ body{
   }
 
 .container2{
-  background-image: url(img/bg_header.png);
-  background-position: bottom;
-  height: 55vh;
-  background-size: cover;
+  background-image: url("../../../static/favigen/img/bg_header2.png");
+  background-size: 100%;
+  position: relative;
+  height: 65vh;
   background-repeat: no-repeat; 
 }
 
-
-.header{
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-   
+.nav-link {
+  color: #fff;
 }
-.logo{
-    margin-left: 40px;
-    padding-top: 5px;
+.active {
+  color: #0aecfb !important;
 }
-
-.logo img{
-    align-items: center;
-    width: 35%;
-    justify-content: space-around;
-    padding-top: 5px;
-    
-    
+.user-dropdown{
+  top: 30px;
+  right: 50px;
+  width: 15em;
+  border-radius: 5px;
+  border: 1px solid #2d1d90;
 }
-
-.nav{
-    display: flex;
-    font-size: 18px;
-    font-weight: 600;
-    padding: 3px 30px;
+.user-dropdown > ul{
+  list-style: none;
 }
-
-.nav a{
-  justify-content: space-between;
+.user-dropdown > ul > li > a{
   text-decoration: none;
-  color: rgb(95,93,93);
-  transition: 0.75s ease;
-  padding: 0 20px;
+  color: #000;
 }
-
-.nav a:hover{
-  color: rgb(45,29,144);
-  cursor: pointer;
-}
-
-.hamburger{
-  display: none;
-  cursor: pointer;
-}
-
-.bar{
-  display: block;
-  width: 35px;
-  height: 7px;
-  margin: 5px auto;
-  -webkit-transition: all 0.3s in-out;
-  transition: all 0.3s in-out;
-  background-color: rgb(45,29,144);
+.user-dropdown > ul > li > a:hover{
+  color: #2d1d90;
 }
 
 .generate{
     width: 100%;
     margin-top: 60px;
-    margin-left: 35%;
+    margin-left: 45%;
     align-items: center;
     position: relative;
 }
@@ -85,24 +52,44 @@ body{
 .btn_generate{
   margin-right: 12%;
   padding: 12px 40px;
-  border: 2px solid rgb(102,102,102);
+  border: 2px solid rgb(177,171,214);
   font-size: 16px;
-  color: rgb(102,102,102);
+  color: rgb(177,171,214);
   font-weight: 400;
   border-width: 1px;
   background-color: transparent;
 }
 
+.btn_generate a{
+  text-decoration: none;
+  color: black;
+}
+
+.btn_generate a:hover{
+  color: rgb(177,171,214);
+  cursor: pointer;
+}
+
 .btn_saved{
-  background-color: rgb(45,29,144);
+  background-color: white;
   border-radius:  50px 0 0 50px;
   padding: 14px 50px;
-  color: white;
+  color: black;
   font-size: 16px;
   font-weight: 400;
   position: absolute;
   left: 120px;
   border: none;
+}
+
+.btn_saved a{
+  text-decoration: none;
+  color: black;
+}
+
+.btn_saved a:hover{
+  color: rgb(177,171,214);
+  cursor: pointer;
 }
 
 .savedi{
@@ -128,7 +115,7 @@ body{
     padding-right: 40px;
     padding-top: 5px;
     padding-bottom: 5px;
-    border: 1px solid rgb(102,102,102);
+    border: 1px solid white;
 }
 form > button img{
   align-items: center;
@@ -147,19 +134,21 @@ form input{
 }
 
 .savedi2{
+  flex: 50%;
   display: flex;
-  margin-right: 60px;
+  margin-right: 50px;
   padding-left: 50px;
 }
 
 ::placeholder{
-  color: rgb(77,137,171);
+  color: black;
   font-size: 16px;
   font-weight: 400;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .p1{
+  color: rgb(209,205,231);
   justify-content: center;
   text-align: center;
   margin-top: auto;
@@ -211,7 +200,7 @@ b{
   margin-right: 100px;
   margin-bottom: 5px;
   padding: 25px;
-  background-image: url(img/footer_bg.svg);
+  background-image: url("../../../static/favigen/img/footer_bg.svg");
   background-size: 100%;
   position: relative;
   border-radius: 8px; 
@@ -223,7 +212,7 @@ b{
   margin-right: 100px;
   margin-bottom: 5px;
   padding: 25px;
-  background-image: url(img/footer_bg.svg);
+  background-image: url("../../../static/favigen/img/footer_bg.svg");
   background-size: 100%;
   position: relative;
   border-radius: 8px; 
@@ -246,66 +235,18 @@ b{
 
 /* Media Queries */
 @media screen and (max-width: 768px){
+  
   .container2{
-    background-image: url(img/bg_header.png);
     background-size: cover;
-    background-position: bottom;
-    position: relative;
-    height: 80vh;
-    background-repeat: no-repeat; 
   }
 
-  .hamburger{
-    display: block;
-    padding-top: 5px;
-    margin-right: 45px;
-  }
-
-  .logo {
-    padding-left: 45px;
-    padding-top: 10px;
- }
-
-.logo img{
-  width: 50%;
-}
-
-.hamburger.active .bar:nth-child(2){
-  opacity: 0;
-}
-
-.hamburger.active .bar:nth-child(1){
-  transform: translateY(8px) rotate(45deg);
-}
-
-.hamburger.active .bar:nth-child(3){
-  transform: translateY(-8px) rotate(-45deg);
-}
-
-.nav-menu{
-  width: 100%;
-  position: fixed;
-  background-color: blue;
-  left: -100%;
-  top:70;
-  gap: 0;
-  text-align: center;
-  flex-direction: column;
-}
-
-.nav{
-  margin: 16px 0;
-}
-
-.nav-menu.active{
-  left: 0;
-}
+  
 
 .generate{
   margin-top: 50px;
   margin-left: 180px;
-  width: 100%;
-}
+  width: 100%; 
+ } 
 
 .savedi{
   display: block;
@@ -340,4 +281,137 @@ b{
   padding-left: 493px;
 }
 
+}
+
+
+@media screen and (max-width: 647px){
+  .savedi1 form{
+    margin: auto;
+    padding-right: 40px;
+    margin-bottom: 10px;
+  }
+
+  .savedi2{
+    margin: auto;
+    padding-left: 120px;
+  }
+}
+
+@media screen and (max-width: 570px){
+  .generate{
+    margin-top: 50px;
+    margin-left: 120px;
+    width: 100%;
+  }
+
+  .savedi1 form{
+    margin: auto;
+    padding-right: 30px;
+    margin-bottom: 10px;
+  }
+
+  .savedi2{
+    margin: auto;
+    padding-left: 90px;
+  }
+}
+
+@media screen and (max-width: 525px){
+  .generate{
+    margin-top: 50px;
+    margin-left: 120px;
+    width: 100%;
+  }
+
+  .savedi1 form{
+    margin: auto;
+    padding-right: 30px;
+    margin-bottom: 10px;
+  }
+
+  .savedi2{
+    margin: auto;
+    padding-left: 70px;
+  }
+}
+
+@media screen and (max-width: 506px){
+  .generate{
+    margin-top: 50px;
+    margin-left: 102px;
+    width: 100%;
+  }
+
+  .savedi1 form{
+    margin: auto;
+    padding-right: 50px;
+  }
+  
+  .savedi2{
+    margin: auto;
+    padding-left: 60px;
+  }
+
+  .h22{
+    padding-left: 205px;
+  }
+}
+
+@media screen and (max-width: 470px){
+  .savedi2{
+    margin: auto;
+    padding-left: 60px;
+  }
+
+  .generate{
+    margin-top: 50px;
+    margin-left: 75px;
+    width: 100%;
+  }
+
+  .logo {
+    padding-left: 30px;
+    padding-top: 10px;
+ }
+
+ .h22{
+  padding-left: 205px;
+}
+
+}
+
+@media screen and (max-width: 460px){
+  .savedi2{
+    margin: auto;
+    padding-left: 30px;
+  }
+
+}
+
+@media screen and (max-width: 400px){
+  .savedi2{
+    margin: auto;
+    padding-left: 10px;
+  }
+
+  .generate{
+    margin-top: 50px;
+    margin-left: 55px;
+    width: 100%;
+  }
+
+}
+
+@media screen and (max-width: 360px){
+  .savedi2{
+    margin: auto;
+    padding-left: 10px;
+    flex-wrap: wrap;
+  }
+
+  .generate{
+    margin-top: 50px;
+    margin-left: 20px;
+    width: 100%;
+  }
 }

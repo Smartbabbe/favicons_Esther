@@ -7,6 +7,74 @@
     background-color: white;
     font-family: "Manrope", sans-serif;
   }
+  li {
+    list-style: none;
+   }
+   /* NAVBAR STYLING STARTS */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px;
+ }
+ /* NAVBAR MENU */
+.menu {
+  display: flex;
+  flex-direction: row;
+  gap: 1em;
+  font-size: 18px;
+  margin-right: 40px;
+ }
+ .menu li:hover {
+  background-color: #4A90E2;
+  border-radius: 3px;
+  transition: 0.3s ease;
+ }
+ .menu li {
+  padding: 3px 5px;
+ }
+ /*RESPONSIVE NAVBAR MENU STARTS*/
+/* CHECKBOX HACK */
+input[type=checkbox]{
+  display: none;
+ } 
+ /*HAMBURGER MENU*/
+ .hamburger {
+  display: none;
+  font-size: 24px;
+  user-select: none;
+ }
+ /* APPLYING MEDIA QUERIES */
+ @media (max-width: 768px) {
+ .menu { 
+  display:none;
+  position: absolute;
+  background-color:#2d1d90;
+  right: 0;
+  text-align: center;
+  padding: 0px 10px;
+ }
+ .menu a {
+  color: #fff;
+ }
+  .menu li:hover {
+  display: block;
+  transition: 0.3s ease;
+ }
+ .menu li + li {
+  margin-top: 12px;
+  display: block;
+ }
+ input[type=checkbox]:checked ~ .menu{
+  display: block;
+ }
+ .hamburger {
+  display: block;
+ }
+ .navbar {
+  justify-content: right;
+ }
+ }
   li,
   a {
     text-decoration: none;
@@ -24,9 +92,9 @@
     list-style: none;
   }
   .nav-links li {
-    display: inline-block;
+    display: block;
     padding: 20px 20px;
-    margin-top: 35px;
+    margin-top: 5px;
   }
   
   .container {
@@ -96,10 +164,10 @@
   }
   button {
     width: 25%;
-    float: inline-end;
+    float: right;
     background-color: #2d1d90;
     border: none;
-    padding: 5px;
+    padding: 10px;
     border-radius: 5px;
     color: white;
   }
@@ -108,7 +176,7 @@
     display: block;
   }
   .logo {
-    float: inline-end;
+    float: right;
     margin-right: -5%;
     margin-top: 10%;
     width: 40%;
